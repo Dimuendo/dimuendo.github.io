@@ -1,15 +1,22 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Typography from '@material-ui/core/Typography';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Box from '@material-ui/core/Box';
 import PropTypes from 'prop-types';
-import UnitTable from './UnitTable.jsx';
-import TraitTable from './TraitTable.jsx';
-import ItemTable from './ItemTable.jsx';
-import CompPanel from './CompPanel.jsx'
+// import UnitTable from './UnitTable.jsx';
+// import TraitTable from './TraitTable.jsx';
+// import ItemTable from './ItemTable.jsx';
+// import CompPanel from './CompPanel.jsx'
 import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
+
+const UnitTable = lazy(() => import('./UnitTable'))
+const TraitTable = lazy(() => import('./TraitTable'))
+const ItemTable = lazy(() => import('./ItemTable'))
+const CompPanel = lazy(() => import('./CompPanel'))
+
+const renderLoader = () => <p>Loading</p>;
 
 function a11yProps(index) {
     return {
@@ -111,16 +118,24 @@ function NavBar(props) {
                 </Tabs>
             </AppBar>
             <TabPanel value={value} index={0} id='team-comps'>
-                <CompPanel></CompPanel>
+                <Suspense fallback={renderLoader()}>
+                    <CompPanel></CompPanel>
+                </Suspense>
             </TabPanel>
             <TabPanel value={value} index={1} id='unit-stats'>
-                <UnitTable></UnitTable>
+                <Suspense fallback={renderLoader()}>
+                    <UnitTable></UnitTable>
+                </Suspense>
             </TabPanel>
             <TabPanel value={value} index={2} id='item-stats'>
-                <ItemTable></ItemTable>
+                <Suspense fallback={renderLoader()}>
+                    <ItemTable></ItemTable>
+                </Suspense>
             </TabPanel>
             <TabPanel value={value} index={3} id='trait-stats'>
-                <TraitTable></TraitTable>
+                <Suspense fallback={renderLoader()}>
+                    <TraitTable></TraitTable>
+                </Suspense>
             </TabPanel>
         </Box>
         </ThemeProvider>

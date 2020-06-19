@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c6923c2fd9c6c84617caa727cd0d33dc",
+    "revision": "0be7d1c5f183d33f1b97d3ba89ad6306",
     "url": "/tftstats-frontend/index.html"
   },
   {

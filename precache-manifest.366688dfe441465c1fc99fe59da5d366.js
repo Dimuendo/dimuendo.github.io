@@ -1,27 +1,63 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8bb9d57ecf8b34c32e3fb36510f1933b",
+    "revision": "89669ccd576b74cd9a5c9173727cfe7c",
     "url": "/tftcomps/index.html"
   },
   {
-    "revision": "3a82421360529b88358b",
-    "url": "/tftcomps/static/css/main.2ca5c470.chunk.css"
+    "revision": "0489c95f91eb29cc0102",
+    "url": "/tftcomps/static/css/main.91afbe1e.chunk.css"
   },
   {
-    "revision": "30d35ec9bcd6f9c21702",
-    "url": "/tftcomps/static/js/2.a8ceecc1.chunk.js"
+    "revision": "8965ae7c61ccaf3114ac",
+    "url": "/tftcomps/static/js/0.6160a333.chunk.js"
   },
   {
-    "revision": "eac4cf64bf573541fd6dba29c78393a0",
-    "url": "/tftcomps/static/js/2.a8ceecc1.chunk.js.LICENSE.txt"
+    "revision": "000d6c36287224a7ff48f88e64636454",
+    "url": "/tftcomps/static/js/0.6160a333.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3a82421360529b88358b",
-    "url": "/tftcomps/static/js/main.d9f8b925.chunk.js"
+    "revision": "dbcda06040620d3c2a9f",
+    "url": "/tftcomps/static/js/1.7631037d.chunk.js"
   },
   {
-    "revision": "9e6011af8cb894b6ad18",
-    "url": "/tftcomps/static/js/runtime-main.18258744.js"
+    "revision": "3c93a5d16836c8667202",
+    "url": "/tftcomps/static/js/10.0eceec35.chunk.js"
+  },
+  {
+    "revision": "8e62082968205af69472",
+    "url": "/tftcomps/static/js/2.a1fe17c4.chunk.js"
+  },
+  {
+    "revision": "2389fac304823276249a",
+    "url": "/tftcomps/static/js/5.c9c4967c.chunk.js"
+  },
+  {
+    "revision": "0749163b59fbee32225059cb60c18af6",
+    "url": "/tftcomps/static/js/5.c9c4967c.chunk.js.LICENSE.txt"
+  },
+  {
+    "revision": "8aff5e16483c0796fa24",
+    "url": "/tftcomps/static/js/6.48470c1b.chunk.js"
+  },
+  {
+    "revision": "01d6225b0ff3c4dc353b",
+    "url": "/tftcomps/static/js/7.02a2af94.chunk.js"
+  },
+  {
+    "revision": "6f1a44d1f39b0aab952a",
+    "url": "/tftcomps/static/js/8.098766cd.chunk.js"
+  },
+  {
+    "revision": "81ce1fa5b8564cd1b1eb",
+    "url": "/tftcomps/static/js/9.003c0059.chunk.js"
+  },
+  {
+    "revision": "0489c95f91eb29cc0102",
+    "url": "/tftcomps/static/js/main.a491d173.chunk.js"
+  },
+  {
+    "revision": "8bc232cecd236e75a396",
+    "url": "/tftcomps/static/js/runtime-main.2f303f9c.js"
   },
   {
     "revision": "32b4bfe18d87be5474541b0c923f4b39",

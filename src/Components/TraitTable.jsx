@@ -181,7 +181,7 @@ export default function UnitTable(props) {
 
     useEffect(() => {
         const fetchData = async () => {
-            const traitDataResponse = await fetch('/traitPercentages')
+            const traitDataResponse = await fetch('https://tftstats-api.herokuapp.com/traitPercentages')
             const traitData = await traitDataResponse.json()
             const rows = createRows(traitData)
             setRows(rows)

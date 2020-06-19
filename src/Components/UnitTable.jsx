@@ -181,8 +181,8 @@ export default function UnitTable(props) {
 
     useEffect(() => {
         const fetchData = async () => {
-            const unitDataResponse = await fetch('/unitPercentages')
-            const commonItemsResponse = await fetch('/commonItems')
+            const unitDataResponse = await fetch('https://tftstats-api.herokuapp.com/unitPercentages')
+            const commonItemsResponse = await fetch('https://tftstats-api.herokuapp.com/commonItems')
             const unitData = await unitDataResponse.json()
             const commonItems = await commonItemsResponse.json()
             const rows = createRows(unitData, commonItems)

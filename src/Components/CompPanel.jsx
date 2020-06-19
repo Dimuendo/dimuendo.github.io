@@ -32,7 +32,7 @@ export default function CompPanel(props) {
 
     useEffect(() => {
         const fetchData = async () => {
-            const compStatsDictResponse = await fetch('/compStats')
+            const compStatsDictResponse = await fetch('https://tftstats-api.herokuapp.com/compStats')
             const compStatsDictJson = await compStatsDictResponse.json()
             setCompStatsDict(compStatsDictJson)
         }

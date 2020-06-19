@@ -10,13 +10,14 @@ import PropTypes from 'prop-types';
 // import ItemTable from './ItemTable.jsx';
 // import CompPanel from './CompPanel.jsx'
 import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
+import { CircularProgress } from '@material-ui/core';
 
 const UnitTable = lazy(() => import('./UnitTable'))
 const TraitTable = lazy(() => import('./TraitTable'))
 const ItemTable = lazy(() => import('./ItemTable'))
 const CompPanel = lazy(() => import('./CompPanel'))
 
-const renderLoader = () => <p>Loading</p>;
+const renderLoader = () => <CircularProgress />;
 
 function a11yProps(index) {
     return {

@@ -54,7 +54,10 @@ const theme = createMuiTheme({
 
 const useStyles = makeStyles((theme) => ({
     container: {
-        minWidth: theme.spacing(130),
+        minWidth: theme.spacing(150),
+    },
+    appBar: {
+        minHeight: theme.spacing(6),
     },
     spacer: {
         marginRight: theme.spacing(5),
@@ -71,6 +74,16 @@ const useStyles = makeStyles((theme) => ({
         backgroundColor: '#F5F5F6',
         width: theme.spacing(50),
     },
+    tabs: {
+        minHeight: theme.spacing(6),
+        display: 'flex',
+        margin: 'auto',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    tabLabel: {
+        fontSize: 18,
+    }
 }));
 
 function NavBar(props) {
@@ -83,12 +96,18 @@ function NavBar(props) {
     return (
         <ThemeProvider theme={theme}>
         <Box className={classes.container}>
-            <AppBar position='static'>
-                <Tabs value={value} onChange={handleChange} aria-label='simple tabs example' className={classes.tabLabels} centered>
-                    <Tab label='Team Comp Stats' {...a11yProps(0)} />
-                    <Tab label='Unit Stats' {...a11yProps(1)} />
-                    <Tab label='Item Stats' {...a11yProps(2)} />
-                    <Tab label='Trait Stats' {...a11yProps(3)} />
+            <AppBar className={classes.appBar} position='static'>
+                <Tabs 
+                    value={value} 
+                    onChange={handleChange} 
+                    aria-label='tabs' 
+                    className={classes.tabs} 
+                    centered
+                >
+                    <Tab label={<span className={classes.tabLabel}>Team Comp Stats</span>} {...a11yProps(0)} />
+                    <Tab label={<span className={classes.tabLabel}>Unit Stats</span>} {...a11yProps(1)} />
+                    <Tab label={<span className={classes.tabLabel}>Item Stats</span>} {...a11yProps(2)} />
+                    <Tab label={<span className={classes.tabLabel}>Trait Stats</span>} {...a11yProps(3)} />
                 </Tabs>
             </AppBar>
             <TabPanel value={value} index={0} id='team-comps'>

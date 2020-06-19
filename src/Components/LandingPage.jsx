@@ -54,7 +54,7 @@ const theme = createMuiTheme({
 
 const useStyles = makeStyles((theme) => ({
     container: {
-        // backgroundColor: '#ffebee',
+        minWidth: theme.spacing(130),
     },
     spacer: {
         marginRight: theme.spacing(5),
@@ -82,7 +82,7 @@ function NavBar(props) {
 
     return (
         <ThemeProvider theme={theme}>
-        <div className={classes.container}>
+        <Box className={classes.container}>
             <AppBar position='static'>
                 <Tabs value={value} onChange={handleChange} aria-label='simple tabs example' className={classes.tabLabels} centered>
                     <Tab label='Team Comp Stats' {...a11yProps(0)} />
@@ -103,7 +103,7 @@ function NavBar(props) {
             <TabPanel value={value} index={3} id='trait-stats'>
                 <TraitTable></TraitTable>
             </TabPanel>
-        </div>
+        </Box>
         </ThemeProvider>
     )
 }

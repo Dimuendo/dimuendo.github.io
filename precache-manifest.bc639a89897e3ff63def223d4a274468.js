@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0be7d1c5f183d33f1b97d3ba89ad6306",
+    "revision": "a653b9569ed3c75b1aa326866921c10a",
     "url": "/tftstats-frontend/index.html"
   },
   {
-    "revision": "fc6b6b31a7c56cbd4f29",
+    "revision": "52d591211fda6d975490",
     "url": "/tftstats-frontend/static/css/main.7c67a3b3.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/tftstats-frontend/static/js/2.a8ceecc1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fc6b6b31a7c56cbd4f29",
-    "url": "/tftstats-frontend/static/js/main.3f3f860d.chunk.js"
+    "revision": "52d591211fda6d975490",
+    "url": "/tftstats-frontend/static/js/main.f390bdcf.chunk.js"
   },
   {
     "revision": "49f989ab53160b326b44",

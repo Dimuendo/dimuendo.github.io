@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tftcomps/static/css/main.7c67a3b3.chunk.css",
+    "main.css": "/tftcomps/static/css/main.2ca5c470.chunk.css",
     "main.js": "/tftcomps/static/js/main.d9f8b925.chunk.js",
     "main.js.map": "/tftcomps/static/js/main.d9f8b925.chunk.js.map",
     "runtime-main.js": "/tftcomps/static/js/runtime-main.18258744.js",
@@ -8,9 +8,9 @@
     "static/js/2.a8ceecc1.chunk.js": "/tftcomps/static/js/2.a8ceecc1.chunk.js",
     "static/js/2.a8ceecc1.chunk.js.map": "/tftcomps/static/js/2.a8ceecc1.chunk.js.map",
     "index.html": "/tftcomps/index.html",
-    "precache-manifest.99719d86769bd85fbd77d1152cd2b898.js": "/tftcomps/precache-manifest.99719d86769bd85fbd77d1152cd2b898.js",
+    "precache-manifest.036b470e5468556da62e18f0cb306187.js": "/tftcomps/precache-manifest.036b470e5468556da62e18f0cb306187.js",
     "service-worker.js": "/tftcomps/service-worker.js",
-    "static/css/main.7c67a3b3.chunk.css.map": "/tftcomps/static/css/main.7c67a3b3.chunk.css.map",
+    "static/css/main.2ca5c470.chunk.css.map": "/tftcomps/static/css/main.2ca5c470.chunk.css.map",
     "static/js/2.a8ceecc1.chunk.js.LICENSE.txt": "/tftcomps/static/js/2.a8ceecc1.chunk.js.LICENSE.txt",
     "static/media/38.png": "/tftcomps/static/media/38.32b4bfe1.png",
     "static/media/ahri.png": "/tftcomps/static/media/ahri.1fd0f160.png",
@@ -67,7 +67,7 @@
   "entrypoints": [
     "static/js/runtime-main.18258744.js",
     "static/js/2.a8ceecc1.chunk.js",
-    "static/css/main.7c67a3b3.chunk.css",
+    "static/css/main.2ca5c470.chunk.css",
     "static/js/main.d9f8b925.chunk.js"
   ]
 }

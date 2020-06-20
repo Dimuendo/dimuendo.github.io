@@ -184,10 +184,10 @@ export default function ItemTable(props) {
 
     useEffect(() => {
         const fetchData = async () => {
-            const itemDataResponse = await fetch('https://tftstats-api.herokuapp.com/itemPercentages')
-            const commonUnitsResponse = await fetch('https://tftstats-api.herokuapp.com/commonUnits')
-            const itemData = await itemDataResponse.json()
-            const commonUnits = await commonUnitsResponse.json()
+            const itemStatsDataResponse = await fetch('https://tftstats-api.herokuapp.com/itemStats')
+            const itemStatsData = await itemStatsDataResponse.json()
+            const itemData = itemStatsData['itemPercentages']
+            const commonUnits = itemStatsData['commonUnits']
             const rows = createRows(itemData, commonUnits)
             setRows(rows)
         }

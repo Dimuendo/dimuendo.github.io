@@ -5,10 +5,6 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Box from '@material-ui/core/Box';
 import PropTypes from 'prop-types';
-// import UnitTable from './UnitTable.jsx';
-// import TraitTable from './TraitTable.jsx';
-// import ItemTable from './ItemTable.jsx';
-// import CompPanel from './CompPanel.jsx'
 import { createMuiTheme, ThemeProvider, makeStyles } from '@material-ui/core/styles';
 import { CircularProgress } from '@material-ui/core';
 
@@ -75,8 +71,7 @@ const useStyles = makeStyles((theme) => ({
         margin: 'auto',
         alignItems: 'center',
         justifyContent: 'center',
-        marginBottom: theme.spacing(4)
-        // backgroundColor: 'white'
+        marginBottom: theme.spacing(4),
     },
     filterSelect: {
         backgroundColor: '#F5F5F6',
@@ -143,16 +138,8 @@ function NavBar(props) {
     )
 }
 
-export default class LandingPage extends React.Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {};
-    }
-
-    render() {
-        return (
-            <NavBar comps={this.state.compositions}></NavBar>
-        );
-    }
-}
+export default function LandingPage() {
+    return(
+        <NavBar></NavBar>
+    )
+} 

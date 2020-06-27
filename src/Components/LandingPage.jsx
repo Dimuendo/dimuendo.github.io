@@ -143,16 +143,8 @@ function NavBar(props) {
     )
 }
 
-export default class LandingPage extends React.Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {};
-    }
-
-    render() {
-        return (
-            <NavBar comps={this.state.compositions}></NavBar>
-        );
-    }
-}
+export default function LandingPage() {
+    return(
+        <NavBar></NavBar>
+    )
+} 

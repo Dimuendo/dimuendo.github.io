@@ -5,18 +5,19 @@ import { champImages, champNames, champCosts } from '../Static/champions/ChampDa
 import { useEffect } from 'react';
 
 export default function CompPanel() {
-    const [compStatsDict, setCompStatsDict] = React.useState([]);
-    const [loading, setLoading] = React.useState(true);
+    // const [compStatsDict, setCompStatsDict] = React.useState([]);
+    // const [loading, setLoading] = React.useState(true);
 
-    useEffect(() => {
-        const fetchData = async () => {
-            const compStatsDictResponse = await fetch('https://tftstats-api.herokuapp.com/compStats')
-            const compStatsDictJson = await compStatsDictResponse.json()
-            setCompStatsDict(compStatsDictJson)
-            setLoading(false)
-        }
-        fetchData()
-    }, [])
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //         const compStatsDictResponse = await fetch('https://tftstats-api.herokuapp.com/compStats')
+    //         const compStatsDictJson = await compStatsDictResponse.json()
+    //         setCompStatsDict(compStatsDictJson)
+    //         setLoading(false)
+    //     }
+    //     fetchData()
+    // }, [])
+    const compStatsDict = require('../Data/compStats.json')
 
     let comps = {}
     for (const [strUnitList, compStats] of Object.entries(compStatsDict)) {
@@ -53,12 +54,13 @@ export default function CompPanel() {
 
     return (
         <div>
-            <div style={{display: loading ? "block" : "none"}}>
+            {/* <div style={{display: loading ? "block" : "none"}}>
                 <CircularProgress />
             </div>
             <div style={{display: loading ? "none" : "block"}}>
                 { compCards }
-            </div>
+            </div> */}
+            { compCards }
         </div>
     )
 }

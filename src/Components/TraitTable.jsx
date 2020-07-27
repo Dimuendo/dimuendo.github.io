@@ -171,7 +171,7 @@ export default function UnitTable(props) {
     const classes = useStyles();
     const [order, setOrder] = React.useState('asc');
     const [orderBy, setOrderBy] = React.useState('trait');
-    const [rows, setRows] = React.useState([])
+    // const [rows, setRows] = React.useState([])
 
     const handleRequestSort = (event, property) => {
         const isAsc = orderBy === property && order === 'asc';
@@ -179,16 +179,17 @@ export default function UnitTable(props) {
         setOrderBy(property);
     };
 
-    useEffect(() => {
-        const fetchData = async () => {
-            const traitDataResponse = await fetch('https://tftstats-api.herokuapp.com/traitPercentages')
-            const traitData = await traitDataResponse.json()
-            const rows = createRows(traitData)
-            setRows(rows)
-        }
-        fetchData()
-    }, [])
-
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //         const traitDataResponse = await fetch('https://tftstats-api.herokuapp.com/traitPercentages')
+    //         const traitData = await traitDataResponse.json()
+    //         const rows = createRows(traitData)
+    //         setRows(rows)
+    //     }
+    //     fetchData()
+    // }, [])
+    const traitData = require('../Data/traitStats.json')
+    const rows = createRows(traitData)
 
     return (
         <div className={classes.root}>

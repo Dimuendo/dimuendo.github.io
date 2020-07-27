@@ -174,7 +174,7 @@ export default function ItemTable(props) {
     const classes = useStyles();
     const [order, setOrder] = React.useState('asc');
     const [orderBy, setOrderBy] = React.useState('item');
-    const [rows, setRows] = React.useState([])
+    // const [rows, setRows] = React.useState([])
 
     const handleRequestSort = (event, property) => {
         const isAsc = orderBy === property && order === 'asc';
@@ -182,17 +182,21 @@ export default function ItemTable(props) {
         setOrderBy(property);
     };
 
-    useEffect(() => {
-        const fetchData = async () => {
-            const itemStatsDataResponse = await fetch('https://tftstats-api.herokuapp.com/itemStats')
-            const itemStatsData = await itemStatsDataResponse.json()
-            const itemData = itemStatsData['itemPercentages']
-            const commonUnits = itemStatsData['commonUnits']
-            const rows = createRows(itemData, commonUnits)
-            setRows(rows)
-        }
-        fetchData()
-    }, [])
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //         const itemStatsDataResponse = await fetch('https://tftstats-api.herokuapp.com/itemStats')
+    //         const itemStatsData = await itemStatsDataResponse.json()
+    //         const itemData = itemStatsData['itemPercentages']
+    //         const commonUnits = itemStatsData['commonUnits']
+    //         const rows = createRows(itemData, commonUnits)
+    //         setRows(rows)
+    //     }
+    //     fetchData()
+    // }, [])
+    const itemStatsData = require('../Data/itemStats.json')
+    const itemData = itemStatsData['itemPercentages']
+    const commonUnits = itemStatsData['commonUnits']
+    const rows = createRows(itemData, commonUnits)
 
     return (
         <div className={classes.root}>

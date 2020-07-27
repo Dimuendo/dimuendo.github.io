@@ -14,7 +14,7 @@ import Avatar from '@material-ui/core/Avatar';
 import { champImages, champNames } from '../Static/champions/ChampData.js'
 import { itemImages, itemNames } from '../Static/items/ItemData.js'
 import { Box } from '@material-ui/core';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 
 function createData(champKey, champ, winRate, top4Rate, commonItems, timesPlayed) {
     return { champKey, champ, winRate, top4Rate, commonItems, timesPlayed };

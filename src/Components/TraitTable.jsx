@@ -12,7 +12,7 @@ import Paper from '@material-ui/core/Paper';
 import Tooltip from '@material-ui/core/Tooltip';
 import Avatar from '@material-ui/core/Avatar';
 import { traitImages, traitNames } from '../Static/traits/traitData.js'
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 
 function createData(traitKey, trait, winRate, top4Rate, timesPlayed) {
     return { traitKey, trait, winRate, top4Rate, timesPlayed };

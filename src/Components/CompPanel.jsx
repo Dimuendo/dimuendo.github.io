@@ -1,8 +1,8 @@
 import React from 'react';
-import { CircularProgress } from '@material-ui/core';
+// import { CircularProgress } from '@material-ui/core';
 import CompositionCard from './CompositionCard.jsx';
 import { champImages, champNames, champCosts } from '../Static/champions/ChampData.js'
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 
 export default function CompPanel() {
     // const [compStatsDict, setCompStatsDict] = React.useState([]);
